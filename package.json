@@ -1,0 +1,1 @@
+{"name":"test-work","scripts":{"start":"node index.js"},"version":"0.0.0-45","engines":{"node":"0.8.x"},"subdomain":"one-thousand","dependencies":{"express":"*","mongoose":"*"},"bundledDependencies":["mongoose","express"],"env":{"npm_config_rebuild_bundle":false,"npm_config_production":true}}

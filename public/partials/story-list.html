@@ -1,0 +1,33 @@
+<div class="head">
+    <div class="container">
+        <div class="head-title">Do something good.</div>
+        <div class="row-fluid head-buttons">
+            <div class="span6">
+                <a href="#/story-add" class="btn btn-info btn-large">
+                    <i class="icon-envelope icon-white"></i> I received a blue envelope
+                </a>
+            </div>
+            <div class="span6">
+                <a href="#/good-add" class="btn btn-info btn-large">
+                    <i class="icon-heart icon-white"></i> I gave away a blue envelope
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3 class="title">Stories</h3>
+
+<div class="posts">
+    <div class="post well" ng-repeat="post in posts">
+        <h4><a href="#/story/{{post._id}}">{{post.title}}</a></h4>
+        <p>{{post.text}}</p>
+        <div ng-show="post.showMore">
+            <a href="#/story/{{post._id}}">Read more</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="load-more" ng-show="loadMoreShow" ng-click="loadMore()"><i class="icon-refresh"></i>Load More</div>

@@ -1,0 +1,118 @@
+
+html, body {
+    height: 100%;
+}
+body {
+    overflow-x: hidden;
+    background: url(../images/line.png) repeat-x;
+}
+
+#wrap {
+    height: auto !important;
+    margin: 0 auto -60px;
+    min-height: 100%;
+}
+
+#push {
+    height: 80px;
+}
+
+#footer .credit {
+    margin: 20px 0;
+}
+
+h3.title {
+    font-weight: normal;
+    border-bottom: 1px solid;
+}
+.hide {
+    display: none;
+}
+.input-xlarge {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar .brand {
+    float: none;
+    padding: 15px 0;
+}
+
+.head {
+    text-align: center;
+}
+
+.head-title {
+    padding: 40px 0 0;
+    font-size: 140%;
+}
+
+.head-buttons {
+    max-width: 600px;
+    margin: 40px auto 40px;
+}
+.head-buttons .btn {
+    min-width: 240px;
+    width: 100%;
+    padding: 15px 0;
+    margin: 7px 0;
+}
+
+.share-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.share-container {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.help-description {
+    font-size: 140%;
+    margin: 20px 0 20px;
+}
+
+.error-message {
+    text-align: center;
+    margin-top: 30px;
+}
+.upload-image {
+    height: 80px;
+    width: 80px;
+    margin: 0 5px;
+    cursor: pointer;
+    float: left;
+}
+
+#image-uploader {
+    display: none;
+}
+
+.load-more {
+    text-align: center;
+    font-size: 140%;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+.load-more i {
+    margin: 5px 3px 0;
+}
+.load-more:active {
+    background: #ddd;
+}
+
+#post .thumbnail {
+    max-width: 200px;
+    max-height: 150px;
+    float: left;
+    margin: 5px 10px;
+}
+
+#post .meta {
+    padding: 5px 0;
+    margin: 10px 0;
+    border-top: 1px solid #ddd;
+    font-style: italic;
+    color: #555;
+}

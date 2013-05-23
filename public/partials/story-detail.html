@@ -1,0 +1,11 @@
+<div id="post" ng-show="post.title">
+    <h3>{{post.title}}</h3>
+    <div>{{post.text}}</div>
+    <div class="meta">
+        publish at {{post.date | date:'HH:mm MM/dd/yyyy'}}<span ng-show="post.name">, by {{post.name}}</span>
+    </div>
+</div>
+
+<div ng-show="post.error">
+    <div class="alert alert-error">{{post.error}}</div>
+</div>
