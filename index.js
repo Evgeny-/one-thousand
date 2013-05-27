@@ -58,8 +58,11 @@ app.get('/delete/:id', function(req, res) {
 });
 
 app.get('/voucher/:id', function(req, res) {
-   var allow = +req.params.id === 55555;
-   res.send({result: allow});
+   model('Good')
+      .find({voucher:+req.params.id})
+      .exec(function(a, story) {
+         res.send({result: !!story.length});
+      });
 });
 
 app.get('/last-name/:id', function(req, res) {
@@ -110,6 +113,7 @@ app.post('/add-good', function(req, res) {
       date     : req.body.date,
       location : req.body.location,
       note     : req.body.note,
+      voucher  : +req.body.voucher,
       timeStamp: +(new Date())
    });
 
@@ -118,6 +122,13 @@ app.post('/add-good', function(req, res) {
    });
 });
 
+app.get('/good', function(req, res){
+   model('Good')
+      .find()
+      .exec(function(a, goods) {
+         res.send(goods);
+      });
+});
 
 dbConnect(
    function ()  {console.log('DB started.')},

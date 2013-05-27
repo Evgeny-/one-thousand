@@ -2,23 +2,24 @@
 
    var schemas = {
       Story : {
-         voucher : Number,
-         title : String,
-         text : String,
-         name : String,
-         email : String,
-         accept : Boolean,
-         image : String,
-         timeStamp : Number
+         voucher  : Number,
+         title    : String,
+         text     : String,
+         name     : String,
+         email    : String,
+         accept   : Boolean,
+         image    : String,
+         timeStamp: Number
       },
       Good : {
          lastName : String,
-         age : Number,
-         gender : Number,
-         date : String,
+         age      : Number,
+         gender   : Number,
+         date     : String,
          location : String,
-         note : String,
-         timeStamp : Number
+         note     : String,
+         timeStamp: Number,
+         voucher  : Number
       }
    }
 

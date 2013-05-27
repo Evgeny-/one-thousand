@@ -56,6 +56,18 @@
             </div>
             <textarea name="note" style="width: 95%;" rows="4" placeholder="Any additional comments or notes?"></textarea>
 
+            <div class="help-description">Voucher at envelope</div>
+
+            <div class="row-fluid">
+                <div class="span6">
+                    <input name="voucher" class="input-xlarge" type="text" placeholder="5-digit number" ng-model="voucher" required/>
+                </div>
+                <div class="span6 text-left">
+                    <div ng-hide="voucherValidate()" class="text-error">required 5 digit</div>
+                    <div ng-show="voucherValidate()" class="text-success">ok</div>
+                </div>
+            </div>
+
             <div class="well text-left">
 
                 <p class="text-center">

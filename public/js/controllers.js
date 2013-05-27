@@ -93,6 +93,7 @@ function GoodAddCtrl($scope, $http) {
 
    $scope.step = 1;
    $scope.name = "";
+   $scope.voucher = "";
    $scope.message = {class: 'hide', text: ''};
 
    var _message = function(type) {
@@ -109,6 +110,10 @@ function GoodAddCtrl($scope, $http) {
          $scope.message.text = types[type][1];
       }
    };
+
+   $scope.voucherValidate = function() {
+      return $scope.voucher.match(/^\d+$/) && $scope.voucher.length === 5;
+   }
 
    $scope.nameSend = function() {
       if($scope.name.length === 0 || ! $scope.name.match(/^[a-zA-Z0-9 ]+$/)) {
